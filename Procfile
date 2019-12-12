@@ -1,1 +1,1 @@
-web: gunicorn pollster.wsgi:application
+web: python pollster/manage.py runserver 0.0.0.0:$PORT --noreload
