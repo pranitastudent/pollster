@@ -13,6 +13,11 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 import os
 import dj_database_url
 
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "pollster.settings")
+
+from django.core.wsgi import get_wsgi_application
+application = get_wsgi_application()
+
 
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)

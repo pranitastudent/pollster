@@ -1,2 +1,2 @@
 release: python pollster/manage.py migrate
-web: gunicorn pollster.wsgi:application
+web: gunicorn pollster.wsgi
